@@ -1,4 +1,4 @@
-import React, {FC, PropsWithChildren, useState} from 'react';
+import React, {FC, PropsWithChildren} from 'react';
 
 
 export enum CardVariant {
@@ -19,8 +19,6 @@ const Card: FC<CardProps> =
          variant,
          children
      }) => {
-
-        const [state, setState] = useState(0);
 
         return (
             <div style={{
